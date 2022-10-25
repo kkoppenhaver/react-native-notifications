@@ -74,8 +74,10 @@
 
     </div> <!-- /container -->
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+      fetch('/notify')
+      .then((response) => response.json())
+      .then((data) => alert('Notification event sent!'));
+    </script>
   </body>
 </html>
